@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delizia - Nuestra Empresa</title>
+  <link rel="stylesheet" href="estilos.css"/>
+  <style> body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('imagen/hel.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.encabezado {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'Orbitron', sans-serif;
+  animation: slideInTop 1s ease-out;
+}
+
+.encabezado h1 {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  animation: fadeIn 2s ease-in;
+}
+
+.seccion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  border-radius: 10px;
+  animation: fadeUp 1.5s ease-in;
+}
+
+.seccion img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex: 1;
+}
+
+.descripcion {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.descripcion h2 {
+  color: #ffdddd;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.descripcion p,
+.seccion p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+</style>
+</head>
+<body>
+  <header class="encabezado">
+    <h1>CONOCE NUESTRA EMPRESA</h1>
+    <a href="index.html">
+    <img src="imagen/logo_delizia-white-1024x502.png" alt="Logo Delizia" style="height: 60px; margin: 20px;">
+  </a>
+  </header>
+
+  <main class="contenido">
+    <section class="seccion">
+      <img src="imagen/erer.jpg" alt="Equipo en fábrica"/>
+      <div class="descripcion">
+        <h2>DELIZIA ES...</h2>
+        <p>Somos la empresa boliviana líder en la fabricación y venta de helados, bebidas con contenido de fruta y lácteos. Además, ofrecemos agua de mesa, néctar y un amplio portafolio de nuestras líneas paralelas y productos Lock & Lock. Contamos con plantas de producción en los departamentos de La Paz y Santa Cruz. Dentro de nuestro proceso logístico tenemos una de las flotas de venta con mayor llegada a todo el país, distribuyendo nuestros productos en todo el territorio nacional mediante distribuidores propios y terceros. La constante innovación y la satisfacción total de nuestros clientes son nuestro enfoque total como industria.</p>
+      </div>
+    </section>
+    
+
+    
+            
+    </body>
+
+</html>

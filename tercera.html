@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos Delizia</title>
+  <link rel="stylesheet" href="tercera.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('imagen/bol.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      animation: slideUp 1.5s ease-in-out;
+    }
+
+    .category {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 1rem;
+      padding: 1rem;
+      backdrop-filter: blur(5px);
+      transition: transform 0.3s;
+    }
+
+    .category:hover {
+      transform: scale(1.05);
+    }
+
+    .category h3 {
+      background-color: white;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .product-img {
+      background-color: white;
+      border-radius: 50%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      transition: transform 0.3s;
+    }
+
+    .product-img:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h2>PRODUCTOS DELIZIA</h2>
+  <a href="index.html">
+    <img src="imagen/logo_delizia-white-1024x502.png" alt="Logo Delizia" style="height: 60px; margin: 20px;">
+  </a>
+  <div class="grid-container">
+  <div class="category">
+    <a href="cuarta.html" class="category-button">PRODUCTOS FAVORITOS</a>
+    <img src="imagen/rocky.png" class="product-img" alt="Rocky">
+    <img src="imagen/vaquita.png" class="product-img" alt="Vaquita">
+    <img src="imagen/delizaurio.png" class="product-img" alt="Delizaurio">
+  </div>
+  
+  <div class="category">
+    <a href="quinta.html" class="category-button">PRODUCTOS NUEVOS</a>
+    <img src="imagen/huminta.png" class="product-img" alt="Huminta">
+    <img src="imagen/105-2670-trufa-gostosa.png" class="product-img" alt="Ego Trufa">
+    <img src="imagen/arroz.png" class="product-img" alt="Arroz con leche">
+  </div>
+  
+  <div class="category">
+    <a href="sexta.html" class="category-button">HELADOS</a>
+    <img src="imagen/conowhite.png" class="product-img" alt="Cono White">
+    <img src="imagen/paletafrush.png" class="product-img" alt="Paleta Frush">
+    <img src="imagen/velvet.png" class="product-img" alt="Velvet">
+  </div>
+  
+  <div class="category">
+    <a href="septima.html" class="category-button">OTROS PRODUCTOS</a>
+    <img src="imagen/frush.jpg" class="product-img" alt="Frush">
+    <img src="imagen/ricoco.png" class="product-img" alt="Ricoco">
+    <img src="imagen/conoblack.png" class="product-img" alt="Cono Black">
+  </div>
+</div>
+  
+</body>
+</html>
