@@ -1,0 +1,34 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imagen2/mppspsp.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 60px; 
+}
+
+.rect-img {
+    width: 180px;  /* MÃ¡s ancho */
+    height: 460px; /* MÃ¡s alto */
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.6);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.rect-img:hover {
+    transform: scale(1.05);
+}
